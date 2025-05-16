@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'poppins', sans-serif;
+    background: black;
+    color: white;
+    place-items: center;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+}
+
+#juego {
+    width: 276px;
+    text-align: center;
+}
+
+.celda {
+    display: grid;
+    width: 90px;
+    height: 90px;
+    border: 1px solid red;
+    float: left;
+    cursor: pointer;
+}
+
+.celda:hover {
+    background: rgb(255 255 255 / 20%);
+}
