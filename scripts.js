@@ -20,7 +20,18 @@ function userMove(e) {
         mirarGanador(2, 5, 8);
         mirarGanador(0, 4, 8);
         mirarGanador(2, 4, 6);
+
+        let empate = true;
+        for (let i = 0; i < celda.length; i++)
+            if (!celda[i].innerHTML.length) {
+                empate = false;
+            }
+        if (empate && !gano) {
+            alert('Empate');
+            reiniciarJuego();
+        }
     }
+
 }
 
 function mirarGanador(c1, c2, c3) {
@@ -43,4 +54,5 @@ function reiniciarJuego() {
         celda[i].innerHTML = '';
     }
     gano = false;
+    jUno = true;
 }
